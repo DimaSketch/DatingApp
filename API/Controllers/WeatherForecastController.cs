@@ -2,11 +2,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers;
 
-// Annotation that gives the controller more functionalities
-[ApiController]
-// Route, framework can direct the http request to the appropriate controller and endpoint
-[Route("[controller]")]
-public class WeatherForecastController : ControllerBase
+// // Annotation that gives the controller more functionalities
+// [ApiController]
+// // Route, framework can direct the http request to the appropriate controller and endpoint
+// [Route("[controller]")]
+public class WeatherForecastController : BaseApiController
 {
     private static readonly string[] Summaries = new[]
     {
