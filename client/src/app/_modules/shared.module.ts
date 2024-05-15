@@ -8,13 +8,13 @@ import { ToastrModule } from 'ngx-toastr';
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
-    BsDropdownModule.forRoot(),
+    CommonModule,                // Shared module imports extra modules that dont necessarily correspond with angular
+    BsDropdownModule.forRoot(),  
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right'
     })
   ],
-  exports: [
+  exports: [                     // export is used to export the above modules to any calls within app.module.ts
     BsDropdownModule,
     ToastrModule
   ]
